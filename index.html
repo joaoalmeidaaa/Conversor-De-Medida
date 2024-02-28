@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Conversão de Medidas</title>
+</head>
+<body>
+    <div class="principal">
+        <h1>Conversão de Medidas</h1>
+        <br> 
+        <h2>Faça os principais cálculos de medidas</h2>
+    </div>
+    <div class="container">
+        <div class="calculator-container">
+            <div class="calculator">
+                <input type="text" id="display" disabled>
+                <div class="options">
+                    <select id="menuOpcoesDe" class="menuOpcoes">
+                        <option value="kg">kg</option>
+                        <option value="hg">hg</option>
+                        <option value="dag">dag</option>
+                        <option value="g">g</option>
+                        <option value="dg">dg</option>
+                        <option value="cg">cg</option>
+                        <option value="mg">mg</option>
+                    </select>
+                    <select id="menuOpcoesPara" class="menuOpcoes">
+                        <option value="kg">kg</option>
+                        <option value="hg">hg</option>
+                        <option value="dag">dag</option>
+                        <option value="g">g</option>
+                        <option value="dg">dg</option>
+                        <option value="cg">cg</option>
+                        <option value="mg">mg</option>
+                    </select>
+                </div>
+                <div class="buttons">
+                    <button onclick="limparDisplay()">C</button>
+                    <button onclick="adicionarNoDisplay('/')">/</button>
+                    <button onclick="adicionarNoDisplay('*')">*</button>
+                    <button onclick="calcular()">=</button>
+                    <button onclick="adicionarNoDisplay('0')">0</button>
+                    <button onclick="adicionarNoDisplay('1')">1</button>
+                    <button onclick="adicionarNoDisplay('2')">2</button>
+                    <button onclick="adicionarNoDisplay('3')">3</button>
+                    <button onclick="adicionarNoDisplay('4')">4</button>
+                    <button onclick="adicionarNoDisplay('5')">5</button>
+                    <button onclick="adicionarNoDisplay('6')">6</button>
+                    <button onclick="adicionarNoDisplay('7')">7</button>
+                    <button onclick="adicionarNoDisplay('8')">8</button>
+                    <button onclick="adicionarNoDisplay('9')">9</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Desenvolvido por João Almeida</p>
+        <a href="https://github.com/joaoalmeidaaa"> Acesse o meu:GitHub</a>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+.principal {
+    background-color: bisque;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 10px; 
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box; 
+}
+
+.container {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.menuOpcoes,
+.menu_Opcoes {
+    text-align: center; 
+}
+
+.calculator-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    margin-bottom: 20px; 
+}
+
+.calculator {
+    background-color: blue;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 50px black rgba(0, 0, 0, 0.1);
+    width: 90%; 
+    max-width: 500px; 
+}
+
+#display {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.options select {
+    padding: 10px;
+    font-size: 16px;
+    width: 45%; 
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.buttons button:hover {
+    background-color: coral;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    background-color: bisque;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin-top: 20px; 
+    min-height: 30px;
+}
