@@ -100,6 +100,6 @@ function calcular() {
         resultado = valor / 10; 
     }
 
-    document.getElementById("display").value = resultado;
+    document.getElementById("display").value = resultado.toFixed(2);
     
 }
