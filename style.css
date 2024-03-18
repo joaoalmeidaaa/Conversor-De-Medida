@@ -1,3 +1,42 @@
+#btnUnidadesMedida,
+#btnUnidadesVolume {
+    padding: 10px 60px;
+    font-size: 16px;
+
+    color: red;
+    border: solid , 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+#btnUnidadesMedida:hover,
+#btnUnidadesVolume:hover {
+    background-color:white;
+}
+
+body{
+    background-color: purple;
+}
+#unidadesMedida li,
+#unidadesVolume li {
+    padding: 10px;
+    font-size: 16px;
+    background-color: black;
+    color:whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+#unidadesMedida li:hover,
+#unidadesVolume li:hover {
+    background-color: #2980b9;
+}
+
+
 .principal {
     background-color: bisque;
     font-family: Arial, sans-serif;
@@ -5,10 +44,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 10px; 
+    min-height: 10px;
     margin: 0;
     padding: 15px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .container {
@@ -19,15 +58,15 @@
 
 .menuOpcoes,
 .menu_Opcoes {
-    text-align: center; 
+    text-align: center;
 }
 
 .calculator-container {
     text-align: center;
     display: flex;
     justify-content: center;
-    background-color: grey;
-    margin-bottom: 20px; 
+    background-color: gray;
+    margin-bottom: 20px;
 }
 
 .calculator {
@@ -35,8 +74,8 @@
     padding: 30px;
     border-radius: 30px;
     box-shadow: 0 0 50px black rgba(0, 0, 0, 0.1);
-    width: 90%; 
-    max-width: 500px; 
+    width: 90%;
+    max-width: 500px;
 }
 
 #display {
@@ -55,7 +94,7 @@
 .options select {
     padding: 10px;
     font-size: 16px;
-    width: 45%; 
+    width: 45%;
 }
 
 .buttons {
@@ -78,13 +117,13 @@
 footer {
     display: flex;
     justify-content: space-around;
-    color: black;
-    background-color: bisque;
+    color: white;
+    background-color: gray;
     padding: 15px;
     border-radius: 10px;
     width: 100%;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    margin-top: 20px; 
+    margin-top: 20px;
     min-height: 30px;
 }

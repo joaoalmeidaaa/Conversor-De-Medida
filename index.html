@@ -8,51 +8,63 @@
 </head>
 <body>
     <div class="principal">
-        <h1>Conversão de Medidas</h1>
-        <br> 
-        <h2>Faça os principais cálculos de medidas</h2>
+        <h2>Faça suas conversões clicando nos botões</h2>
+        <button id="btnUnidadesMedida" onclick="mostrarUnidades('medida')">Unidades de Medidas</button>
+        <button id="btnUnidadesVolume" onclick="mostrarUnidades('volume')">Unidades de Volume</button>
     </div>
-    <div class="container">
-        <div class="calculator-container">
-            <div class="calculator">
-                <input type="text" id="display" disabled>
-                <div class="options">
-                    <select id="menuOpcoesDe" class="menuOpcoes">
-                        <option value="kg">kg</option>
-                        <option value="hg">hg</option>
-                        <option value="dag">dag</option>
-                        <option value="g">g</option>
-                        <option value="dg">dg</option>
-                        <option value="cg">cg</option>
-                        <option value="mg">mg</option>
-                    </select>
-                    <select id="menuOpcoesPara" class="menuOpcoes">
-                        <option value="kg">kg</option>
-                        <option value="hg">hg</option>
-                        <option value="dag">dag</option>
-                        <option value="g">g</option>
-                        <option value="dg">dg</option>
-                        <option value="cg">cg</option>
-                        <option value="mg">mg</option>
-                    </select>
-                </div>
-                <div class="buttons">
-                    <button onclick="limparDisplay()">C</button>
-                    <button onclick="adicionarNoDisplay('/')">/</button>
-                    <button onclick="adicionarNoDisplay('*')">*</button>
-                    <button onclick="calcular()">=</button>
-                    <button onclick="adicionarNoDisplay('0')">0</button>
-                    <button onclick="adicionarNoDisplay('1')">1</button>
-                    <button onclick="adicionarNoDisplay('2')">2</button>
-                    <button onclick="adicionarNoDisplay('3')">3</button>
-                    <button onclick="adicionarNoDisplay('4')">4</button>
-                    <button onclick="adicionarNoDisplay('5')">5</button>
-                    <button onclick="adicionarNoDisplay('6')">6</button>
-                    <button onclick="adicionarNoDisplay('7')">7</button>
-                    <button onclick="adicionarNoDisplay('8')">8</button>
-                    <button onclick="adicionarNoDisplay('9')">9</button> 
-                    <button onclick="adicionarNoDisplay('.')">.</button> 
-                </div>
+    
+    <div id="unidadesMedida" style="display: none;">
+        <h2>Unidades de Medida</h2>
+        <ul id="listaMedidas">
+            <li onclick="selecionarUnidade(this, 'menuOpcoesDe','menuOpcoesPara')">Quilograma (kg)</li>
+            <li onclick="selecionarUnidade(this, 'menuOpcoesDe','menuOpcoesPara')">Hectograma (hg)</li>
+            <li onclick="selecionarUnidade(this, 'menuOpcoesDe','menuOpcoesPara')">Decagrama (dag)</li>
+            <li onclick="selecionarUnidade(this, 'menuOpcoesDe','menuOpcoesPara')">Grama (g)</li>
+            <li onclick="selecionarUnidade(this, 'menuOpcoesDe','menuOpcoesPara')">Decigrama (dg)</li>
+            <li onclick="selecionarUnidade(this, 'menuOpcoesDe','menuOpcoesPara')">Centigrama (cg)</li>
+            <li onclick="selecionarUnidade(this, 'menuOpcoesDe','menuOpcoesPara')">Miligrama (mg)</li>
+        </ul>
+    </div>
+
+    <div id="unidadesVolume" style="display: none;">
+        <h2>Unidades de Volume</h2>
+        <ul id="listaVolume">
+            <li onclick="selecionarUnidade(this, 'menuOpcoesDe','menuOpcoesPara')">litro (L)</li>
+            <li onclick="selecionarUnidade(this, 'menuOpcoesDe','menuOpcoesPara')">mililitro (mL)</li>
+            <li onclick="selecionarUnidade(this, 'menuOpcoesDe','menuOpcoesPara')">decilitro (dL)</li>
+            <li onclick="selecionarUnidade(this, 'menuOpcoesDe','menuOpcoesPara')">centilitro (cL)</li>
+            <li onclick="selecionarUnidade(this, 'menuOpcoesDe','menuOpcoesPara')">decilitro (dL)</li>
+            <li onclick="selecionarUnidade(this, 'menuOpcoesDe','menuOpcoesPara')">hectolitro (hL)</li>
+        </ul>
+    </div>
+    
+    <div class="calculator-container">
+        <div class="calculator">
+            <input type="text" id="display" disabled>
+            <div class="options">
+                <select id="menuOpcoesDe" class="menuOpcoes">
+                    <!-- As opções serão preenchidas dinamicamente pelo JavaScript -->
+                </select>
+                <select id="menuOpcoesPara" class="menuOpcoes">
+                    <!-- As opções serão preenchidas dinamicamente pelo JavaScript -->
+                </select>
+            </div>
+            <div class="buttons">
+                <button onclick="limparDisplay()">C</button>
+                <button onclick="adicionarNoDisplay('/')">/</button>
+                <button onclick="adicionarNoDisplay('*')">*</button>
+                <button onclick="calcular()">=</button>
+                <button onclick="adicionarNoDisplay('0')">0</button>
+                <button onclick="adicionarNoDisplay('1')">1</button>
+                <button onclick="adicionarNoDisplay('2')">2</button>
+                <button onclick="adicionarNoDisplay('3')">3</button>
+                <button onclick="adicionarNoDisplay('4')">4</button>
+                <button onclick="adicionarNoDisplay('5')">5</button>
+                <button onclick="adicionarNoDisplay('6')">6</button>
+                <button onclick="adicionarNoDisplay('7')">7</button>
+                <button onclick="adicionarNoDisplay('8')">8</button>
+                <button onclick="adicionarNoDisplay('9')">9</button> 
+                <button onclick="adicionarNoDisplay('.')">.</button> 
             </div>
         </div>
     </div>
